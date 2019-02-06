@@ -1,4 +1,4 @@
-        ///Programa que calcula la hipotenusa de un tri·ngulo rect·ngulo
+        ///Programa que calcula la hipotenusa de un tri√°ngulo rect√°ngulo
 
 #include <stdio.h>
 
