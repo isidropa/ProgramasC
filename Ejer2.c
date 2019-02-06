@@ -1,4 +1,4 @@
-    ///Programa que c·lcula el domingo de Pascua de un aÒo determinado
+    ///Programa que c√°lcula el domingo de Pascua de un a√±o determinado
 
 #include <stdio.h>
 
@@ -8,7 +8,7 @@ int main()
 
     printf("De que anyo quieres saber el dia del domingo de Pascua? ");
     scanf("%d", &anyo);
-    //IMPORTANTE: operador direcciÛn (&) para guardar valores
+    //IMPORTANTE: operador direcci√≥n (&) para guardar valores
 
     //ecuaciones de calculo
     A = anyo % 19;
@@ -21,6 +21,6 @@ int main()
     //operador ternario (?:) como sentencia if-else
     N <= 31 ? printf("Domingo de Pascua: %d de Marzo de %d", N, anyo)
         : printf("Domingo de Pascua: %d de Abril de %d", N - 31, anyo);
-    //N indica los dÌas del mes de Marzo,
+    //N indica los d√≠as del mes de Marzo,
     // pero si sobrepasa 31 estaremos en el mes de Abril
 }
