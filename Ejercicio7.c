@@ -9,7 +9,7 @@ int main()
     printf("        /*Calculo max, min y media de N numeros*/\n");
     do
     {
-        printf("Introduce el %d\xA7 numero\n", contador + 1); // \xA7 == บ
+        printf("Introduce el %d\xA7 numero\n", contador + 1); // \xA7 == ยบ
         scanf("%f", &num);
 
         if(contador == 0) max = min = num;  //la primera vez max=min=num
