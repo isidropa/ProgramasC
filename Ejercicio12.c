@@ -18,7 +18,7 @@ void imprimir_inversa(char *cadena) //variable referenciada
     char cad_inv[50];
     int tam, m, num_cad2 = 0;
 
-    //Calculo tamaño de la cadena
+    //Calculo tamaÃ±o de la cadena
     for(tam=0; cadena[tam] != '\0'; tam++);
     //Copia inversa en otra cadena
     for(m=tam-1; m>=0; m--)
