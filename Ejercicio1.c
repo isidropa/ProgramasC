@@ -1,16 +1,17 @@
-/*Programa que obtiene e imprime un nombre y una direccion*/
+/*Ejercicio 1*/
 
 #include <stdio.h>
 
 void main()
 {
-    char nombre[10];
-    char direccion[20];
+    long numero;
+    char letra;
+    puts("\tPrograma que imprime un DNI por pantalla");
 
-    printf("Dame el nombre: ");
-    gets(nombre);
-    printf("Dame la direccion: ");
-    gets(direccion);
+    printf("Proporcioname una letra: ");
+    scanf("%c", &letra);
+    printf("Proporcioname un numero de 8 digitos: ");
+    scanf("%d", &numero);
 
-    printf("\nNombre: %s\nDireccion: %s", nombre, direccion);
+    printf("\nDNI: %d-%c", numero, letra);
 }
