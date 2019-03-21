@@ -14,7 +14,6 @@ float varianza(float c[], int t, float med)
         sumatorio += pow(c[i] - med, 2);
     return sumatorio/t;
 }
-
 void main()
 {
     float conjunto[51] = {0.0}, med=0.0, var=0.0;
@@ -29,7 +28,7 @@ de un conjunto de datos");
         scanf("%f", &conjunto[TAM]);
         TAM++;
         do
-        {
+        {   //Limpia el flujo de entrada que deja scanf()
             fflush(stdin);
             printf("Otro? SI[s] NO[n]: ");
             scanf("%c", &condicion);
