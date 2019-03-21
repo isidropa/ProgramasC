@@ -1,19 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+void imprimir(int v[]);
 void generador_aleatorio(int v[]);
 void comprobacion(int v[], int r[]);
 void cambio_posicion_numeros(int v[]);
 
 void main()
 {
-    /*time() devuelve los segundos pasados desde
-     00:00:00 UTC, 1 de enero de 1970, por lo
-     tanto la semilla cambia en cada programa*/
     srand(time(NULL));
 
-    int vector[20]={0}, res[2]={0};
-    int condicion=0;
+    int vector[20]={0}, res[2]={0}, condicion=0;
     generador_aleatorio(vector);
 
     puts("\t\t/*Vector aleatorio de 20 numeros*/");
@@ -52,10 +49,9 @@ void imprimir(int v[])
 void generador_aleatorio(int v[])
 {
     for(int i=0; i<20; i++)
-    {   //Devuelve el resto de (rand() / 51)
-        // dando un numero entre 0 y 51-1
         v[i]=rand() % 51;
-    }
+ //Devuelve el resto de (rand() / 51)
+ // dando valores entre 0 y 51-1
 }
 
 void comprobacion(int v[], int r[])
