@@ -19,7 +19,7 @@ void main()
 {
     float conjunto[51] = {0.0}, med=0.0, var=0.0;
     int TAM=0;
-    char condicion='0';
+    char condicion='\0';
     puts("\t\tCalculo de la media, desviacion y varianza \
 de un conjunto de datos");
 
